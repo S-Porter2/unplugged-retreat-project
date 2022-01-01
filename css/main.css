@@ -352,24 +352,22 @@ textarea {
        /* Header */
 
        header {
-          display: flex;
-          justify-content: flex-start;
+          justify-content: space-around;
+          padding: 33px 0;
        }
 
        header .content-wrapper {
           width: 100%;
-          display: flex;
-          justify-content: center;
+          justify-content: space-between;
 
        }
 
        header nav {
-           width: 21%;
+           width: 20%;
        }
 
        header nav ul {
-           display: inline-flex;
-           justify-content: flex-end;
+          justify-content: space-between;
        }
 
        .header-divider {
@@ -383,12 +381,12 @@ textarea {
            margin: 50px 0;
            display: flex;
            justify-content: space-between;
-           flex-flow: column,wrap;
+           flex-flow: row wrap;
        }
 
        aside .content-wrapper .form-description,
        aside .content-wrapper .form {
-           width: 100%;
+           width: 40%;
            margin: 0;
        }
 
@@ -396,38 +394,37 @@ textarea {
 
        .features article {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-flow: column;
-            flex-basis: auto;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+            flex-basis: 50%;
        }
 
        .features .features-item-description {
-           width: 80%;
+           width: 50%;
        }
 
        /* Reviews */
        .reviews article {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
        }
 
        .reviews article div {
-           width: 100%;
+           width: 49%;
        }
 
        /* Footer */
        footer .content-wrapper {
-           width: 79.5%;
+           width: 65%;
            margin: 100px 0;
-           padding-left: 150px;
-           padding-right: 128px;
+
        }
 
        .footer-content {
            display: flex;
            justify-content: space-between;
-           align-items: flex-start;
+           align-items: center;
        }
 
        footer .contact {
@@ -435,7 +432,7 @@ textarea {
        }
 
        footer .copyright {
-           width: 30.5%;
+           width: 100%;
        }
    }
 
@@ -443,20 +440,17 @@ textarea {
       About Page
       ========================================================================== */
 
-      .mission-content h2 {
+      .mission-content {
            display: flex;
            justify-content: space-between;
-           align-items: flex-start;
+           align-items: center;
+           padding-top: 20px;
        }
 
        }
 
        .mission-content p, {
-           width:100%;
-           display: flex;
-           justify-content: space-around;
-           align-content: flex-start;
-           flex-flow: column;
+           width:45%;
 
        }
 
@@ -490,6 +484,61 @@ textarea {
    @media screen and (min-width: 1200px) {
 
    /*Desktop styles here*/
+
+   /* General styles */
+       .content-wrapper {
+           max-width: 960px;
+
+       }
+
+       /* Hero Area */
+       .hero-area h1 {
+          width:60%;
+       }
+
+
+       /* Aside */
+aside .content-wrapper {
+    justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+    width:30%;
+}
+
+/* Features */
+.features h2 {
+    width: 90%;
+}
+
+.features article {
+    flex-basis:33%;
+}
+
+/* Reviews */
+.reviews article div {
+    width: 42%;
+}
+
+/* ==========================================================================
+About Page
+========================================================================== */
+.mission h2,
+.contact-section .content-wrapper h2 {
+    width: 95%;
+}
+
+/* ==========================================================================
+FAQ Page
+========================================================================== */
+.faq h2 {
+    width: 100%;
+}
+
+}
+
+
 
    }
 
