@@ -127,11 +127,11 @@ textarea {
    }
 
    img {
-
+   	width: 100%;
    }
 
    figure {
-
+           margin: 0;
    }
 
    address {
@@ -169,6 +169,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
   }
 
    .header-divider {
@@ -183,11 +184,19 @@ textarea {
     flex-flow: row wrap;
    }
 
-  header nav ul {
+   header nav ul {
     width: 44.5%;
     display: flex;
     justify-content: space-around;
     }
+
+    header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
   footer .content-wrapper {
     width: 55%;
@@ -211,13 +220,16 @@ textarea {
 
   /* -------------------- Mobile Styles - Homepage -------------------- */
 
-
-  /* Hero Area */
+    /* Hero Area */
 
    .hero-area {
+    color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
+    background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+    background-size: cover;
    }
 
    .hero-area h1 {
@@ -242,11 +254,13 @@ textarea {
    /* features styles */
 
    .features {
+     color: white;
      display: flex;
      justify-content: center;
      align-items: center;
-
-   }
+     background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+     background-size: cover;
+     }
 
     .features h2 {
       padding-left: 20px;
@@ -271,12 +285,21 @@ textarea {
       /* reviews styles */
 
     .reviews {
+     color: white;
      background-color: #2a423a;
      padding-left: 20px;
      padding-right: 20px;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;}
+
+    figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    }
 
      .reviews h2 {
        margin-bottom: 40px;
@@ -334,16 +357,16 @@ textarea {
      }
 
      .faq h2 {
-       margin-bottom: 40px;
-       line-height: 1;
+      margin-bottom: 40px;
+      line-height: 1;
      }
 
      .faq-content {
-       margin-bottom: 50px;
+      margin-bottom: 50px;
      }
 
      .faq-content h4 {
-       line-height: 1.333;
+      line-height: 1.333;
      }
 
 /* ==========================================================================
