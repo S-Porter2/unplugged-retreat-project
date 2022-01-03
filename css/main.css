@@ -155,6 +155,7 @@ textarea {
 
    header,
    footer {
+    background-color: #202322;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,12 +173,18 @@ textarea {
 
   }
 
-   .header-divider {
-     width: 100%;
+  .header-divider {
+   background: #3a3a3a;
+   height: 1px;
+   width: 100%;
+   margin: 10px 0 20px 0;
    }
 
    header nav {
     width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -185,9 +192,13 @@ textarea {
    }
 
    header nav ul {
-    width: 44.5%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    }
+
+   header nav ul li {
+      font-size: 1.125em;
     }
 
     header figure {
@@ -196,27 +207,44 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-}
+    }
 
-  footer .content-wrapper {
+    footer {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer .content-wrapper {
+    color: white;
     width: 55%;
     margin:50px 0;
-  }
+    }
 
-  footer .social-icons {
+    footer .contact {
+    margin-bottom: 50px;
+    }
+
+    footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-  }
+    }
 
-  footer .social-icons p {
+    footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
 
-  }
+    }
 
+    footer .copyright {
+    margin: 20px 0;
+    }
 
   /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -226,8 +254,8 @@ textarea {
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
+    min-height: 500px;
     background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
     background-size: cover;
    }
@@ -250,6 +278,33 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
    }
+
+   aside .form {
+     margin-top: 30px;
+   }
+
+   input[type=text] {
+     box-sizing: border-box;
+     width: 100%;
+     color: #2a423a;
+     font-style: italic;
+     padding: 1em;
+   }
+
+   input[type=button] {
+     width: 100%;
+     padding: 20px 0;
+     margin-top: 20px;
+     background-color: #2a423a;
+     font-family: 'Poppins', Helvetica, Arial, sans-serif;
+     font-weight: 500;
+     font-size: 1.125em;
+     color: #e2e3ed;
+     border: none;
+     text-align: center;
+     text-transform: uppercase;
+   }
+
 
    /* features styles */
 
@@ -323,6 +378,22 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
    }
+
+   .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%;
+    overflow: hidden;
+    position: relative;
+    }
+
+   .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
 
    .contact-section {
      background-color: #2a423a;
@@ -451,31 +522,7 @@ textarea {
   clear: both;
 }
 
-aside .form {
-  margin-top: 30px;
-}
 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
