@@ -193,6 +193,8 @@ textarea {
 
    header nav ul {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     justify-content: space-around;
     }
@@ -236,10 +238,13 @@ textarea {
     }
 
     footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+      background-color: #527158;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     footer .copyright {
@@ -261,6 +266,7 @@ textarea {
    }
 
    .hero-area h1 {
+
      font-size: 2.25em;
      font-family: 'Poppins', Helvetica, Arial, sans-serif;
      font-weight: 500;
