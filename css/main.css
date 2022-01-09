@@ -309,6 +309,8 @@ textarea {
    /* features styles */
 
    .features {
+     font-size: 0.875em;
+     font-family: 'Open Sans', sans-serif;
      color: white;
      display: flex;
      justify-content: center;
@@ -318,8 +320,16 @@ textarea {
      }
 
     .features h2 {
-      padding-left: 20px;
-      padding-right: 20px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.875em;
+      font-weight: normal;
+    }
+
+    .features i {
+      color: blue;
+    	font-size: 3.75em;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
 
    .features .features-items {
